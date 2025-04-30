@@ -115,4 +115,9 @@ public class BookRepositoryImpl implements BookRepository {
         }
         return Set.of();
     }
+
+    @Override
+    public void setNewBook(Book book) {
+        listOfBooks.add(book);
+    }
 }
